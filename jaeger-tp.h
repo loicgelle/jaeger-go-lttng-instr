@@ -18,6 +18,7 @@ TRACEPOINT_EVENT(
         uint64_t, t_id_h,
         uint64_t, t_id_l,
         uint64_t, s_id,
+        uint64_t, s_p_id,
         char*, o_name,
         int64_t, s_time
     ),
@@ -27,6 +28,7 @@ TRACEPOINT_EVENT(
         ctf_integer(uint64_t, trace_id_high, t_id_h)
         ctf_integer(uint64_t, trace_id_low, t_id_l)
         ctf_integer(uint64_t, span_id, s_id)
+        ctf_integer(uint64_t, parent_span_id, s_p_id)
         ctf_string(op_name, o_name)
         ctf_integer(int64_t, start_time, s_time)
     )
