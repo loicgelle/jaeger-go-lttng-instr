@@ -1,7 +1,7 @@
 package lttng
 
 /*
-#cgo LDFLAGS: -ldl -L. jaeger-tpp.a -llttng-ust
+#cgo LDFLAGS: -ldl -llttng-ust
 
 #define TRACEPOINT_DEFINE
 #include "jaeger-tp.h"
