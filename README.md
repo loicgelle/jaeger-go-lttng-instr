@@ -1,0 +1,1 @@
+[TESTING] LTTng tracepoints for start / end span events in Jaeger Go client.
